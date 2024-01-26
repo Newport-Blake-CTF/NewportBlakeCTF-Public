@@ -1,0 +1,26 @@
+name: unnecessary
+author: kroot
+description: |-
+  pyjails are too guessy and unnecessary! so i made an even guessier one.
+  
+  `{{nc}}`
+
+flag:
+  file: ./flag.txt
+
+containers:
+  main:
+    build: .
+    resources:
+      limits:
+        cpu: 200m
+        memory: 200M
+    securityContext:
+      privileged: true
+    ports:
+      - 5000
+
+expose:
+  main:
+    - target: 5000
+      tcp: 31381

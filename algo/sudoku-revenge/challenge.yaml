@@ -1,0 +1,26 @@
+name: sudoku-revenge
+author: null_awe
+description: |-
+  Let's play sudoku! For real this time...
+  
+  `{{nc}}`
+
+flag:
+  file: ./flag.txt
+
+containers:
+  main:
+    build: .
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 30274
+
+provide:
+  - sudoku-revenge.py

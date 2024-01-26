@@ -1,0 +1,29 @@
+id: walters-crystal-shop
+name: walter's crystal shop
+author: kroot
+description: |
+  My buddy Walter is selling some crystals, check out his shop!
+  
+  {{link}}
+
+flag:
+  file: ./flag.txt
+
+provide:
+  - walters_crystal_shop.zip
+
+containers:
+  main:
+    build: .
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+    ports:
+      - 3000
+
+expose:
+  main:
+    - target: 3000
+      http: walters-crystal-shop
+

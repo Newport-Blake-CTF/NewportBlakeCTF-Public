@@ -1,0 +1,16 @@
+{
+  "name": "flotsam",
+  "version": "0.1.0",
+  "files": [
+    "flotsam_bg.wasm",
+    "flotsam.js",
+    "flotsam_bg.js",
+    "flotsam.d.ts"
+  ],
+  "module": "flotsam.js",
+  "types": "flotsam.d.ts",
+  "sideEffects": [
+    "./flotsam.js",
+    "./snippets/*"
+  ]
+}

@@ -1,0 +1,1 @@
+nbctf{runtime_resolver_abuse_is_always_fun}

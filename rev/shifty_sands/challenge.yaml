@@ -1,0 +1,30 @@
+id: shiftysands
+name: Shifty Sands
+author: flocto
+description: |-
+  Can you escape the sand-filled maze before it's too late?
+
+  `{{nc}}`
+
+flag:
+  file: ./flag.txt
+
+provide:
+  - sands
+
+containers:
+  main:
+    build: .
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+    securityContext:
+      privileged: true
+    ports:
+      - 5000
+
+expose:
+  main:
+    - target: 5000
+      tcp: 30401

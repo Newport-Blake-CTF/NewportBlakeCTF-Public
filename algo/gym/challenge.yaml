@@ -1,0 +1,28 @@
+name: gym
+author: null_awe
+description: |-
+  Bro kroot.
+
+  Ignore the time/memory/input/output section of the pdf.
+  
+  `{{nc}}`
+
+flag:
+  file: ./flag.txt
+
+containers:
+  main:
+    build: .
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 30270
+
+provide:
+  - gym.pdf

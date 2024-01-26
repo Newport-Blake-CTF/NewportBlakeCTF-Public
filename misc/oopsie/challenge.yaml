@@ -1,0 +1,11 @@
+name: oopsie
+author: kroot
+description: |-
+  Oopsie! I accidentally spilled a bunch of chemicals on my phone during chemistry and now my screen looks like this!
+
+  Flag format: `nbctf{XXxX..}`
+  
+flag: nbctf{PHoNeISBrOKY}
+
+provide:
+  - oopsie.jpg

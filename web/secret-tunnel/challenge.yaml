@@ -1,0 +1,28 @@
+name: secret tunnel
+author: kroot
+description: |
+  Can you find the flag on the other end of my secret tunnel?
+  
+  {{link}}
+
+flag:
+  file: ./flag.txt
+
+provide:
+  - secret_tunnel.zip
+
+containers:
+  main:
+    build: .
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+    ports:
+      - 5000
+
+expose:
+  main:
+    - target: 5000
+      http: secret-tunnel
+

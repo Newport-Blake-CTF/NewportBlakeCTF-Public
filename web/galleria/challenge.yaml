@@ -1,0 +1,27 @@
+name: Galleria
+author: flocto
+description: |-
+  Put up some fun images for everyone in this amazing image gallery!
+  
+  {{link}}
+
+flag:
+  file: ./flag.txt
+
+provide:
+  - galleria.zip
+
+containers:
+  main:
+    build: .
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+    ports:
+      - 5000
+
+expose:
+  main:
+    - target: 5000
+      http: galleria

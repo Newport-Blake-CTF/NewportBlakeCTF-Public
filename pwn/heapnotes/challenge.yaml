@@ -1,0 +1,28 @@
+name: heapnotes
+author: kroot
+description: |
+  dont know heap exploitation? read [this.](https://ir0nstone.gitbook.io/notes/types/heap)
+  
+  `{{nc}}`
+
+flag:
+  file: ./flag.txt
+
+provide:
+  - ./Dockerfile
+  - ./heapnotes
+  - ./libc-2.31.so
+
+containers:
+  main:
+    build: ./
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 30172

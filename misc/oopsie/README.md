@@ -1,0 +1,1 @@
+I created this challenge by grabbing the spectral lines from [this wikipedia page](https://en.wikipedia.org/wiki/Spectral_line) and using a bit of photo editing to remove the background and only keep the lines. The flag is simply the periodic table elements that match each emission spectrum in order.

@@ -1,0 +1,32 @@
+name: canary-in-a-coal-mine
+author: unvariant
+description: |
+  Golden canary,
+
+  Sings amidst the darkened coal,
+
+  Warning whispers death.
+
+    - ChatGPT
+  
+  `{{nc}}`
+
+flag:
+  file: ./flag.txt
+
+provide:
+  - ./dist.tar
+
+containers:
+  main:
+    build: ./
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 30178

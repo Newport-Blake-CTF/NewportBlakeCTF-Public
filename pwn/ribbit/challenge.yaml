@@ -1,0 +1,28 @@
+name: ribbit
+author: kroot
+description: |
+  Oh no! My pet frog got stuck inside a giant hole! Can you help him ROP out?
+  
+  `{{nc}}`
+
+flag:
+  file: ./flag.txt
+
+provide:
+  - ./ribbit
+  - ./ribbit.c
+  - ./Dockerfile
+
+containers:
+  main:
+    build: ./
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 30170

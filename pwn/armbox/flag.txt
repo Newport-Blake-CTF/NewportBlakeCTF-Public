@@ -1,0 +1,1 @@
+nbctf{why_is_semihosting_enabled_by_default}

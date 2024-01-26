@@ -1,0 +1,6 @@
+name: persona
+author: Ryclic
+description: |-
+    I have this username, can you help me uncover who it really is? They go by the name in2win9945 online.
+flag:
+    file: ./flag.txt

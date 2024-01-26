@@ -1,0 +1,23 @@
+.Game-grid {
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: rgb(83, 189, 237);
+    display: inline-block;
+}
+
+.Game-grid .Game-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.Game-grid .Game-tile {
+    font-size: x-large;
+    margin: 3px;
+}
+
+/* 
+.Game-grid .Game-tile-selected {
+    border-radius: 5px;
+    border: 2px solid red;
+    margin: 2px;
+} */

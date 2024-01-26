@@ -1,0 +1,7 @@
+name: Linkedout 3
+author: Goodbye
+description: |-
+  Lets see your linkedin experience. There's another flag hidden somewhere, lets see if you can find it.
+
+flag:
+  file: ./flag.txt

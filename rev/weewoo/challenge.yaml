@@ -1,0 +1,13 @@
+name: Weewoo
+author: flocto
+description: |-
+    Yeah I love stack-based languages :clueless:
+
+    The other output of the program is `49`.
+
+flag:
+    file: ./flag.txt
+
+provide:
+    - script.ua
+    - flag.png

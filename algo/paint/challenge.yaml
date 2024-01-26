@@ -1,0 +1,30 @@
+name: paint
+author: null_awe
+description: |-
+  Don't roast my paintings...
+
+  The first integer in the input is `t`, the number of test cases.
+
+  Ignore the time/memory/input/output section of the pdf.
+  
+  `{{nc}}`
+
+flag:
+  file: ./flag.txt
+
+containers:
+  main:
+    build: .
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 30273
+
+provide:
+  - paint.pdf

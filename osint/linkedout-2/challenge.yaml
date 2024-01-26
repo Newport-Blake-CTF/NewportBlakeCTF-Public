@@ -1,0 +1,9 @@
+name: Linkedout 2
+author: Goodbye
+description: |-
+  Dang I can't believe I'm going to be a senior soon. I love writing about my experiences touring various college campuses. Unfortunately on my most recent trip, I seem to have lost my flag somewhere. Can you help me find it? <br>
+  hint: flag format is nbctf{xxxx.xxxx.xxxx}. (What three words would give that location?) <br>
+  hint 2: to avoid confusion, please use the address of the closest intersection near the actual location
+
+flag:
+  file: ./flag.txt

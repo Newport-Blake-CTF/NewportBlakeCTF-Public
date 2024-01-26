@@ -1,0 +1,8 @@
+version: '3'
+services:
+  flotsam:
+    build:
+      context: .
+    privileged: true
+    ports:
+      - "3000:3000"

@@ -1,0 +1,9 @@
+name: do you hear that?
+author: kroot
+description: |-
+  I'm not sure why, but when I look at this image I can hear some sort of faint sound. Do you hear it too?
+  
+flag: nbctf{y0u_h4v3_s0m3_g00d_34rs}
+
+provide:
+  - help.png

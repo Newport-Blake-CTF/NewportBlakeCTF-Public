@@ -1,0 +1,11 @@
+id: itchy-scratchy
+name: Itchy Scratchy
+author: flocto
+description: |-
+  Yeah sorry, I couldn't resist. Use Turbowarp if you want.
+
+flag:
+  file: ./flag.txt
+
+provide:
+  - itchyscratchy.sb3

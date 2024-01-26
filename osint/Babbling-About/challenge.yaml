@@ -1,0 +1,15 @@
+id: babbling-about
+name: Babbling About
+author: Goodbye
+description: |-
+  They say a monkey with a typewriter will eventually type out a masterpiece. But what about a flag?
+
+  Enclose the flag in brackets.
+
+  I think it was on the same page that websites return when the page doesnt exist?
+
+provide:
+  - location.txt
+
+flag:
+  file: ./flag.txt

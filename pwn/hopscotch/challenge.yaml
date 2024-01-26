@@ -1,0 +1,29 @@
+name: hopscotch
+author: unvariant
+description: |
+  These one byte write challenges have been all the rage recently, so I decided to write one too!
+  
+  `{{nc}}`
+
+  Hint:
+  maybe you should take a closer look how functions are resolved...
+
+flag:
+  file: ./flag.txt
+
+provide:
+  - ./dist.tar
+
+containers:
+  main:
+    build: ./
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 30174

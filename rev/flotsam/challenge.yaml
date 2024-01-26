@@ -1,0 +1,27 @@
+id: flotsam
+name: flotsam ~ x marks the spot
+author: flocto
+description: |-
+    My friend gave me this unfinished game to test and told me he left a flag at the x. 
+    What does that even mean? I dunno.
+
+    Here's the game:
+    {{link}}
+
+flag:
+    file: ./flag.txt
+
+containers:
+    main:
+        build: .
+        resources:
+            limits:
+                cpu: 100m
+                memory: 100M
+        ports:
+            - 3000
+
+expose:
+    main:
+        - target: 3000
+          http: flotsam

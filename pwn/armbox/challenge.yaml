@@ -1,0 +1,27 @@
+name: armbox
+author: unvariant
+description: |
+  We don't have enough compute to run full system emulation for seccomp D:
+  You'll have to make do with this budget seccomp implementation.
+  
+  `{{nc}}`
+
+flag:
+  file: ./flag.txt
+
+provide:
+  - ./dist.tar
+
+containers:
+  main:
+    build: ./
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 30176

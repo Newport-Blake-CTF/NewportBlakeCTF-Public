@@ -1,0 +1,11 @@
+name: webcam
+author: Ryclic
+description: |-
+    인터넷에서 웹캠을 잃어버렸습니다. 정확히 어디에 있는지 알려주실 수 있나요?
+    Flag is the coordinates of the location truncated to three digits, wrapped in nbctf.
+    Example: `nbctf{XX.XXX_XX.XXX}`
+
+flag:
+    file: ./flag.txt
+provide:
+  - images.zip
